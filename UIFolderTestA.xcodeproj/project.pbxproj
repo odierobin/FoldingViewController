@@ -13,6 +13,18 @@
 		4C748861200352DE0018C2FA /* UIFolderTestA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C74885F200352DE0018C2FA /* UIFolderTestA.xcdatamodeld */; };
 		4C748863200352DE0018C2FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C748862200352DE0018C2FA /* Assets.xcassets */; };
 		4C748866200352DE0018C2FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C748864200352DE0018C2FA /* LaunchScreen.storyboard */; };
+		4C74886F200356B90018C2FA /* FoldingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C74886E200356B90018C2FA /* FoldingViewController.swift */; };
+		4C82DFC520073FFE0028D3E2 /* BottomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C82DFC320073FFE0028D3E2 /* BottomViewController.swift */; };
+		4C82DFC620073FFE0028D3E2 /* BottomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C82DFC420073FFE0028D3E2 /* BottomViewController.xib */; };
+		4C82DFC92007414F0028D3E2 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C82DFC72007414F0028D3E2 /* LeftViewController.swift */; };
+		4C82DFCA2007414F0028D3E2 /* LeftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C82DFC82007414F0028D3E2 /* LeftViewController.xib */; };
+		4C82DFCD2007415B0028D3E2 /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C82DFCB2007415B0028D3E2 /* RightViewController.swift */; };
+		4C82DFCE2007415B0028D3E2 /* RightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C82DFCC2007415B0028D3E2 /* RightViewController.xib */; };
+		4CCDB26B2006224700327BDA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCDB2692006224700327BDA /* MainViewController.swift */; };
+		4CCDB26C2006224700327BDA /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CCDB26A2006224700327BDA /* MainViewController.xib */; };
+		4CFB101D20066F9C00D508D5 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB101B20066F9C00D508D5 /* TopViewController.swift */; };
+		4CFB101E20066F9C00D508D5 /* TopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CFB101C20066F9C00D508D5 /* TopViewController.xib */; };
+		4CFB10212006702B00D508D5 /* FrontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB10202006702B00D508D5 /* FrontViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +36,18 @@
 		4C748862200352DE0018C2FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C748865200352DE0018C2FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C748867200352DE0018C2FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C74886E200356B90018C2FA /* FoldingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldingViewController.swift; sourceTree = "<group>"; };
+		4C82DFC320073FFE0028D3E2 /* BottomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomViewController.swift; sourceTree = "<group>"; };
+		4C82DFC420073FFE0028D3E2 /* BottomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomViewController.xib; sourceTree = "<group>"; };
+		4C82DFC72007414F0028D3E2 /* LeftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
+		4C82DFC82007414F0028D3E2 /* LeftViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeftViewController.xib; sourceTree = "<group>"; };
+		4C82DFCB2007415B0028D3E2 /* RightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
+		4C82DFCC2007415B0028D3E2 /* RightViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RightViewController.xib; sourceTree = "<group>"; };
+		4CCDB2692006224700327BDA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4CCDB26A2006224700327BDA /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		4CFB101B20066F9C00D508D5 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		4CFB101C20066F9C00D508D5 /* TopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopViewController.xib; sourceTree = "<group>"; };
+		4CFB10202006702B00D508D5 /* FrontViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +80,8 @@
 		4C748857200352DE0018C2FA /* UIFolderTestA */ = {
 			isa = PBXGroup;
 			children = (
+				4CFB101F20066FF300D508D5 /* FoldingViewController */,
+				4CCDB2642005FC2D00327BDA /* Useag */,
 				4C748858200352DE0018C2FA /* AppDelegate.swift */,
 				4C74885A200352DE0018C2FA /* ViewController.swift */,
 				4C74885C200352DE0018C2FA /* Main.storyboard */,
@@ -65,6 +91,48 @@
 				4C74885F200352DE0018C2FA /* UIFolderTestA.xcdatamodeld */,
 			);
 			path = UIFolderTestA;
+			sourceTree = "<group>";
+		};
+		4C74886D200356940018C2FA /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				4CFB10202006702B00D508D5 /* FrontViewController.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		4CCDB2642005FC2D00327BDA /* Useag */ = {
+			isa = PBXGroup;
+			children = (
+				4C74886D200356940018C2FA /* Interface */,
+				4CE822DC2007ACB4005C6A31 /* Template */,
+			);
+			path = Useag;
+			sourceTree = "<group>";
+		};
+		4CE822DC2007ACB4005C6A31 /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				4CCDB2692006224700327BDA /* MainViewController.swift */,
+				4CCDB26A2006224700327BDA /* MainViewController.xib */,
+				4CFB101B20066F9C00D508D5 /* TopViewController.swift */,
+				4CFB101C20066F9C00D508D5 /* TopViewController.xib */,
+				4C82DFC320073FFE0028D3E2 /* BottomViewController.swift */,
+				4C82DFC420073FFE0028D3E2 /* BottomViewController.xib */,
+				4C82DFC72007414F0028D3E2 /* LeftViewController.swift */,
+				4C82DFC82007414F0028D3E2 /* LeftViewController.xib */,
+				4C82DFCB2007415B0028D3E2 /* RightViewController.swift */,
+				4C82DFCC2007415B0028D3E2 /* RightViewController.xib */,
+			);
+			path = Template;
+			sourceTree = "<group>";
+		};
+		4CFB101F20066FF300D508D5 /* FoldingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4C74886E200356B90018C2FA /* FoldingViewController.swift */,
+			);
+			path = FoldingViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,8 +195,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C748866200352DE0018C2FA /* LaunchScreen.storyboard in Resources */,
+				4C82DFCA2007414F0028D3E2 /* LeftViewController.xib in Resources */,
+				4CCDB26C2006224700327BDA /* MainViewController.xib in Resources */,
 				4C748863200352DE0018C2FA /* Assets.xcassets in Resources */,
+				4CFB101E20066F9C00D508D5 /* TopViewController.xib in Resources */,
+				4C82DFCE2007415B0028D3E2 /* RightViewController.xib in Resources */,
 				4C74885E200352DE0018C2FA /* Main.storyboard in Resources */,
+				4C82DFC620073FFE0028D3E2 /* BottomViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,9 +212,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CFB101D20066F9C00D508D5 /* TopViewController.swift in Sources */,
+				4C82DFC520073FFE0028D3E2 /* BottomViewController.swift in Sources */,
 				4C74885B200352DE0018C2FA /* ViewController.swift in Sources */,
+				4CFB10212006702B00D508D5 /* FrontViewController.swift in Sources */,
+				4C74886F200356B90018C2FA /* FoldingViewController.swift in Sources */,
 				4C748861200352DE0018C2FA /* UIFolderTestA.xcdatamodeld in Sources */,
+				4C82DFC92007414F0028D3E2 /* LeftViewController.swift in Sources */,
+				4C82DFCD2007415B0028D3E2 /* RightViewController.swift in Sources */,
 				4C748859200352DE0018C2FA /* AppDelegate.swift in Sources */,
+				4CCDB26B2006224700327BDA /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,8 +359,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QPQJH9RXM3;
+				DEVELOPMENT_TEAM = Y9EK4BDJU3;
 				INFOPLIST_FILE = UIFolderTestA/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "odie-s.bones.UIFolderTestA";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -294,8 +375,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QPQJH9RXM3;
+				DEVELOPMENT_TEAM = Y9EK4BDJU3;
 				INFOPLIST_FILE = UIFolderTestA/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "odie-s.bones.UIFolderTestA";
 				PRODUCT_NAME = "$(TARGET_NAME)";
