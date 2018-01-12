@@ -9,6 +9,8 @@
 import UIKit
 
 class TopViewController: UIViewController {
+    
+    public var delegate : FoldingUserAction?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,5 +28,8 @@ class TopViewController: UIViewController {
     public func showSelfInfo(){
         print("Info From TOP VIEWCONTROLLER!")
     }
-
+    @IBAction func onTestButtonClose(_ sender: Any) {
+        delegate?.onUserAction(to: .Hide, with: .Top)
+    }
+    
 }

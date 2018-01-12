@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FoldingViewController: UIViewController {
+class FoldingViewController: UIViewController,FoldingUserAction {
     
     var zoneSetting : [FoldingLayoutDirection : FoldingZoneSetting] = [:]
     var zoneViews : [FoldingLayoutDirection : UIViewController] = [:]
@@ -79,7 +79,7 @@ class FoldingViewController: UIViewController {
         view.addGestureRecognizer(swipeRightRecognizer)
     }
     
-    func getScale(to showDirction : FoldingLayoutDirection) -> CGFloat{
+    private func getScale(to showDirction : FoldingLayoutDirection) -> CGFloat{
         if let setting = zoneSetting[showDirction]{
             switch showDirction {
             case .Top:
@@ -99,8 +99,15 @@ class FoldingViewController: UIViewController {
         
     }
     
+    public func onUserAction(to action : FoldingLayoutAction,with dirction : FoldingLayoutDirection){
+        
+        if (action == .Show && zoneViews[dirction] != nil && nowStatus == .Center) || (action == .Hide && zoneViews[dirction] != nil && nowStatus == dirction){
+            onZoneAction(to: action, with: dirction)
+        }
+    }
     
-    @objc func onSwip(gesture:UISwipeGestureRecognizer){
+    
+    @objc private func onSwip(gesture:UISwipeGestureRecognizer){
         switch gesture.direction {
         case .down:
             if nowStatus == .Center && zoneSetting[.Top] != nil{
@@ -131,7 +138,7 @@ class FoldingViewController: UIViewController {
         }
     }
     
-    func onZoneAction(to action : FoldingLayoutAction,with dirction : FoldingLayoutDirection){
+    private func onZoneAction(to action : FoldingLayoutAction,with dirction : FoldingLayoutDirection){
         
        delegate?.onZoneActionStart(to: action, with: dirction, on: zoneViews[dirction]!, and: zoneViews[.Center]!)
         if action == .Show{
@@ -176,6 +183,10 @@ class FoldingViewController: UIViewController {
 protocol FoldingViewDelegate {
     func onZoneActionStart(to action : FoldingLayoutAction,with dirction : FoldingLayoutDirection,on viewController : UIViewController,and centerViewControler : UIViewController)
     func onZoneActionComplete(to action : FoldingLayoutAction,with dirction : FoldingLayoutDirection,on viewController : UIViewController,and centerViewControler : UIViewController)
+}
+
+protocol FoldingUserAction {
+    func onUserAction(to action : FoldingLayoutAction,with dirction : FoldingLayoutDirection)
 }
 
 public enum FoldingLayoutDirection : Int{

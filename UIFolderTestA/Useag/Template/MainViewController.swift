@@ -9,10 +9,12 @@
 import UIKit
 
 class MainViewController: UIViewController {
-
+    public var delegate : FoldingUserAction?
+    
+    private var count : Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        testButtonCount.text = "Button Click Count : \(count)"
     }
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?){
@@ -24,9 +26,12 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func onTestButton(_ sender: Any) {
-        print("on Test Button")
+        delegate?.onUserAction(to: .Show, with: .Top)
+        count += 1
+        testButtonCount.text = "Button Click Count : \(count)"
     }
     
+    @IBOutlet weak var testButtonCount: UILabel!
     
 
 }
